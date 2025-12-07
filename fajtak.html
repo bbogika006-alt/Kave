@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A világ legfontosabb kávéfajtái és termőhelyei Flexbox alapú reszponzív elrendezéssel.">
+    <title>Kávékülönlegességek - Fajták és Eredetek</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lato:wght@400;700&display=swap" >
+    
+    <link rel="stylesheet" href="weblap.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <h1 class="logo">Perfect Brew ☕</h1>
+            <button class="menu-toggle" aria-label="Navigáció váltása">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="weblap.html">Főoldal</a></li>
+                <li ><a href="fajtak.html">Kávéfajták</a></li>
+                <li><a href="kalkulator.html">Adagoló Kalkulátor</a></li>
+                <li><a href="jelentkezes.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-intro container">
+            <h2>🌍 A Kávé Eredete és Fő Fajtái</h2>
+            <p>Fedezze fel a kávé világának sokszínűségét! A termőhely, az éghajlat és a bab típusa alapvetően befolyásolják italunk ízét és aromáját.</p>
+        </section>
+
+        <div class="card-container container">
+            
+            <article class="card coffee-type-card">
+                <img src="https://www.caffeservice.hu/wp-content/uploads/2022/03/a-legjobb-kavebabok.jpg" alt="Arabica kávébabok" loading="lazy">
+                <div class="card-content">
+                    <h3>Arabica (Coffea Arabica)</h3>
+                    <p class="origin">Eredet: Etiópia</p>
+                    <p>Az Arabica teszi ki a világ kávétermelésének 60-70%-át. Finom, komplex ízvilág jellemzi, magas savtartalommal és gazdag aromákkal.</p>
+                    <p class="details">Koffeintartalom: ~1.5%</p>
+                </div>
+            </article>
+
+            <article class="card coffee-type-card">
+                <img src="https://bestmixer.hu/wp-content/uploads/2023/10/robusta-kavebab.jpg" alt="Robusta kávébabok" loading="lazy">
+                <div class="card-content">
+                    <h3>Robusta (Coffea Canephora)</h3>
+                    <p class="origin">Eredet: Nyugat- és Közép-Afrika</p>
+                    <p>Robusztusabb, ellenállóbb növény. Íze erősebb, földesebb, sokkal intenzívebb. Többnyire eszpresszó keverékek alapjaként használják a kiváló krémréteg miatt.</p>
+                    <p class="details">Koffeintartalom: ~2.5% - 4.5%</p>
+                </div>
+            </article>
+
+            <article class="card origin-card">
+                <img src="https://www.coffeein.hu/images/products/165_1_bezkofeinova-kava-etiopia-yirgacheffe-200g-zrno_1397995347.jpg" alt="Etióp kávéültetvény" loading="lazy">
+                <div class="card-content">
+                    <h3>Etiópia - A Kávé Bölcsője</h3>
+                    <p class="origin">Jellemző fajta: Heirloom Arabica</p>
+                    <p>Itt fedezték fel a kávét. A Yirgacheffe és Sidamo régiók kávéi virágos, citrusos, enyhe testű kávék, amelyek az egyedi feldolgozási módszereknek köszönhetik jellegüket.</p>
+                    <p class="details">Főbb régiók: Sidamo, Yirgacheffe, Harrar</p>
+                </div>
+            </article>
+            
+            <article class="card origin-card">
+                <img src="https://kavefajtak.hu/wp-content/uploads/2024/11/brazilia-kavetermelo.jpg" alt="Brazil kávé termőterület" loading="lazy">
+                <div class="card-content">
+                    <h3>Brazília - A Kávéóriás</h3>
+                    <p class="origin">Jellemző fajta: Bourbon, Mundo Novo</p>
+                    <p>A világ legnagyobb kávétermelője. Itt a kávék jellemzően alacsony savasságúak, diós, csokoládés, édes ízvilágúak.</p>
+                    <p class="details">Termelés: Elsősorban Arabica</p>
+                </div>
+            </article>
+
+            </div>
+        
+            </main>
+
+    <footer>
+        <p>&copy; 2025 Kávékultúra Világa. Minden jog fenntartva.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

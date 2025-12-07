@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelentkezés - Légy Barista!</title>
+    <link rel="stylesheet" href="weblap.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="navbar">
+            <h1 class="logo">Perfect Brew ☕</h1>
+            <ul class="nav-links">
+                <li><a href="weblap.html">Főoldal</a></li>
+                <li><a href="fajtak.html">Kávéfajták</a></li>
+                <li><a href="kalkulator.html">Adagoló Kalkulátor</a></li>
+                <li><a href="jelentkezes.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <section class="form-section container">
+            <h2>Légy Barista! - Jelentkezési Űrlap</h2>
+            <form id="baristaForm" novalidate> 
+                
+                <div class="form-group">
+                    <label for="fullName">1. Teljes Név:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <div class="error-message" id="error-fullName"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">2. Email Cím:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="error-email"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">3. Telefonszám (XXX XX XX XXX):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" required>
+                    <div class="error-message" id="error-phone"></div>
+                </div>
+
+                <div class="form-group radio-group">
+                    <label>4. Kávézási szokások: (Napi 1-et ki kell választani)</label>
+                    
+                    <div class="radio-option">
+                        <input type="radio" id="daily1" name="coffeeFreq" value="1" required>
+                        <label for="daily1" class="radio-label">Napi 1</label>
+                    </div>
+                    
+                    <div class="radio-option">
+                        <input type="radio" id="daily23" name="coffeeFreq" value="2-3">
+                        <label for="daily23" class="radio-label">Napi 2-3</label>
+                    </div>
+
+                    <div class="error-message" id="error-coffeeFreq"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience">5. Előzetes Tapasztalat:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">-- Kérlek válassz --</option>
+                        <option value="Kezdő">Kezdő</option>
+                        <option value="Haladó">Haladó</option>
+                        <option value="Profi">Profi</option>
+                    </select>
+                    <div class="error-message" id="error-experience"></div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <label>6. Tanfolyam Típusa (Legalább egyet válassz):</label>
+                    
+                    <input type="checkbox" id="esp" name="courseType" value="espresso">
+                    <label for="esp" class="checkbox-label">Eszpresszó</label>
+                    
+                    <input type="checkbox" id="latte" name="courseType" value="latteart">
+                    <label  for="latte" class="checkbox-label">Latte Art</label>
+                    
+                    <div class="error-message" id="error-courseType"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">7. Megjegyzések (min. 20 karakter):</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                    <div class="error-message" id="error-comments"></div>
+                </div>
+
+                <button type="submit">Jelentkezés Elküldése</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="js/validation.js"></script>
+
+    </body>
+</html>

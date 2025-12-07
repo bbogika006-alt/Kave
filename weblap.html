@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A kávé tudománya és művészete. Interaktív kalkulátorral és fajtabemutatóval a tökéletes kávéért.">
+    <meta name="author" content="Bakos Boglárka">
+    <title>☕ Kávékultúra Világa - Főoldal</title>
+    
+    <link rel="stylesheet" href="weblap.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <nav class="navbar">
+            <h1 class="logo">Perfect Brew ☕</h1>
+            <ul class="nav-links">
+                <li><a href="weblap.html">Főoldal</a></li>
+                <li><a href="fajtak.html">Kávéfajták</a></li>
+                <li><a href="kalkulator.html">Adagoló Kalkulátor</a></li>
+                <li><a href="jelentkezes.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section class="hero-section">
+            <h1>A Perfect Brew Világa: A Tökéletes Kávé Titka és Tudománya</h1>
+            <p class="subtitle">Több, mint egy ital. A kávé egy rituálé, egy kémiai folyamat és egy utazás a világ körül.</p>
+        </section>
+
+        <section id="about" class="introduction-section container">
+            <h2>Miért a Kávé Művészete és Tudománya?</h2>
+            
+            <p>A napi csésze kávé nem véletlen eredménye. A tökéletes ízprofil elérése precíz arányokat, kémiai tudást és mélyreható ismereteket igényel a bab eredetéről és feldolgozásáról.</p>
+            
+            <p>Oldalunk célja, hogy megossza a professzionális baristák és kávészakértők tudását. Megmutatjuk, hogy a kávé minősége nem csak a drága gépeken múlik, hanem azon, hogyan kezeled a hőmérsékletet, a szemcseméretet és a legfontosabbat: a víz-kávé arányt.</p>
+        </section>
+        
+        <section class="key-features container">
+            
+            <h2 class="section-title">A Kávé Minőségének Három Alappillére</h2>
+
+            <div class="link-cards-grid">
+                
+                <article class="feature-card">
+                    <header><h3>1. Az Eredet Kérdése: Fajták és Termőhelyek 🌍</h3></header>
+                    <p>Milyen a testessége egy brazil kávénak? Miben más az Arabica magas savtartalma a Robusta krémességétől? Az ízprofil kialakulását a magasság, az éghajlat és a feldolgozási módszer határozza meg.</p>
+                    <p class="highlight">Tudás: Ismerd meg a terroir hatását a végső ízre.</p>
+                    <a href="fajtak.html" class="button-link primary-btn">Kávéfajták Enciklopédiája</a>
+                </article>
+
+                <article class="feature-card">
+                    <header><h3>2. A Perfekt Arány: A Brew Ratio ⚖️</h3></header>
+                    <p>A 1:15 arány filterkávéhoz, vagy a 1:2 eszpresszóhoz nem véletlen szabályok. Ezek biztosítják az optimális **extrakciót**, elkerülve az alulextrahált savasságot és a túlextrahált keserűséget.</p>
+                    <p class="highlight">Eszköz: Számold ki a gramm/ml arányt a mi kalkulátorunkkal.</p>
+                    <a href="kalkulator.html" class="button-link primary-btn">Interaktív Kalkulátor</a>
+                </article>
+
+                <article class="feature-card">
+                    <header><h3>3. Sajátíts El Profi Technikákat 🧑‍🎓</h3></header>
+                    <p>A pörkölés típusától a kávé őrlésének szemcseméretéig minden apró részlet számít. A helyes tudás birtokában a saját konyhádban is képes leszel kihozni a maximumot a kávédból.</p>
+                    <p class="highlight">Képzés: Jelentkezz barista workshopra vagy kóstolóra.</p>
+                    <a href="jelentkezes.html" class="button-link primary-btn">Jelentkezés és Képzés</a>
+                </article>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kávékultúra Világa | Készítette: Bakos Boglárka | HTML5 Validált és Reszponzív Design.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

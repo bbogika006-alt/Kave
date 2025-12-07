@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weblap.css">
+</head>
+<body>
+     <header class="main-header">
+        <nav class="navbar">
+            <h1 class="logo">Perfect Brew ☕</h1>
+            <ul class="nav-links">
+                <li ><a href="weblap.html">Főoldal</a></li>
+                <li><a href="fajtak.html">Kávéfajták</a></li>
+                <li><a href="kalkulator.html">Adagoló Kalkulátor</a></li>
+                <li><a href="jelentkezes.html">Jelentkezés</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="calculator-section">
+    <h2>☕ Kávé Adagoló Kalkulátor</h2>
+    <p>Találd meg a tökéletes kávé-víz arányt!</p>
+    
+    <div class="input-group">
+        <label for="method">Elkészítési módszer:</label>
+        <select id="method">
+            <option value="16">Filterkávé (1:16)</option>
+            <option value="15">French Press (1:15)</option>
+            <option value="2">Eszpresszó (1:2)</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="coffeeGrams">Kávé mennyisége (gramm):</label>
+        <input type="number" id="coffeeGrams" min="1" value="20" required>
+    </div>
+
+    <button id="calculateBtn">Számítás</button>
+
+    <div id="result" class="result-box">
+        <h3>Eredmény:</h3>
+        <p id="waterNeeded">Add meg a paramétereket a számításhoz.</p>
+    </div>
+</section>
+<script src="js/ratio-calc.js"></script>
+</body>
+</html>
